@@ -2,7 +2,7 @@
 A sample code to load one million sales order records into bigquery and executed an select SQL command with groupby and aggregation method.
 
 It's a maven java command project:</br>
-'''
+```xml
 <dependency>
     <groupId>com.google.cloud</groupId>
     <artifactId>google-cloud-bigquery</artifactId>
@@ -13,7 +13,7 @@ It's a maven java command project:</br>
     <artifactId>json</artifactId>
     <version>20160810</version>
 </dependency>
-'''
+```
 
 In order to use Google's BigQuery java library, you need follow the steps from below link first:
 https://cloud.google.com/bigquery/docs/reference/libraries#client-libraries-install-java </br>
