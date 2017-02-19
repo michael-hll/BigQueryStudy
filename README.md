@@ -13,14 +13,15 @@ It's a maven java command project:</br>
     <version>20160810</version>
 </dependency>
 
-It also use the BigQuerySnippets sample from Github: https://github.com/GoogleCloudPlatform/google-cloud-java/blob/master/google-cloud-examples/src/main/java/com/google/cloud/examples/bigquery/snippets/BigQuerySnippets.java
+In order to use Google's BigQuery java library, you need follow the steps from below link first:
+https://cloud.google.com/bigquery/docs/reference/libraries#client-libraries-install-java </br>
+
+It also use the BigQuerySnippets sample code from Github: https://github.com/GoogleCloudPlatform/google-cloud-java/blob/master/google-cloud-examples/src/main/java/com/google/cloud/examples/bigquery/snippets/BigQuerySnippets.java
 </br>But I enhanced it to meet my requirement.
 
 The table schema with json format looks like below:
 
-{"company_id":"1","user_firstname":"michael","user_lastname":"han","product_price":"5000.50","product_name":"iPhone6","sales_order_number":"001","sales_order_date":"1486283602455","user_id":"1","sales_order_id":"1","product_id":"1","company_name":"QAD","customer_name":"HP","customer_id":"1","status":"open"}
-
-
+{"company_id":"1","user_firstname":"michael","user_lastname":"han","product_price":"5000.50","product_name":"iPhone6","sales_order_number":"001","sales_order_date":"1486283602455","user_id":"1","sales_order_id":"1","product_id":"1","company_name":"QAD","customer_name":"HP","customer_id":"1","status":"open"} </br>
 
 # Execution & Output
 After you import into your exclipse project, run the java main method, you can see the following output in the console:
