@@ -1,7 +1,8 @@
-# BigQueryStudy
-A sample code to load one million data into bigquery and did an select SQL command execution.
+# BigQuery Study
+A sample code to load one million sales order records into bigquery and executed an select SQL command with groupby and aggregation method.
 
 It's a maven java command project:</br>
+'''
 <dependency>
     <groupId>com.google.cloud</groupId>
     <artifactId>google-cloud-bigquery</artifactId>
@@ -12,6 +13,7 @@ It's a maven java command project:</br>
     <artifactId>json</artifactId>
     <version>20160810</version>
 </dependency>
+'''
 
 In order to use Google's BigQuery java library, you need follow the steps from below link first:
 https://cloud.google.com/bigquery/docs/reference/libraries#client-libraries-install-java </br>
@@ -23,7 +25,7 @@ The table schema with json format looks like below:
 
 {"company_id":"1","user_firstname":"michael","user_lastname":"han","product_price":"5000.50","product_name":"iPhone6","sales_order_number":"001","sales_order_date":"1486283602455","user_id":"1","sales_order_id":"1","product_id":"1","company_name":"QAD","customer_name":"HP","customer_id":"1","status":"open"} </br>
 
-# Execution & Output
+## Execution & Output
 After you import into your exclipse project, run the java main method, you can see the following output in the console:
 
 Step 1 start: Generate json data file at: Sun Feb 19 13:23:02 CST 2017</br>
