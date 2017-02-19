@@ -1,5 +1,5 @@
 # BigQuery Study
-A sample code to load one million sales order records into bigquery and executed an select SQL command with groupby and aggregation method.
+A sample code to load one million sales order records into bigquery and executed a select SQL command with groupby and aggregation method.
 
 It's a maven java command project:</br>
 ```xml
@@ -18,7 +18,7 @@ It's a maven java command project:</br>
 In order to use Google's BigQuery java library, you need follow the steps from below link first:
 https://cloud.google.com/bigquery/docs/reference/libraries#client-libraries-install-java </br>
 
-It also use the BigQuerySnippets sample code from Github: https://github.com/GoogleCloudPlatform/google-cloud-java/blob/master/google-cloud-examples/src/main/java/com/google/cloud/examples/bigquery/snippets/BigQuerySnippets.java
+It also uses the BigQuerySnippets sample code from Github: https://github.com/GoogleCloudPlatform/google-cloud-java/blob/master/google-cloud-examples/src/main/java/com/google/cloud/examples/bigquery/snippets/BigQuerySnippets.java
 </br>But I enhanced it to meet my requirement.
 
 The table schema with json format looks like below:
@@ -28,7 +28,7 @@ The table schema with json format looks like below:
 ```
 
 ## Execution & Output
-After you import into your exclipse project, run the java main method, you can see the following output in the console:
+After you import it into your Eclipse project, run the java main method, you can see the following output in the console:
 
 ```
 Step 1 start: Generate json data file at: Sun Feb 19 13:23:02 CST 2017
