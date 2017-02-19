@@ -23,7 +23,9 @@ It also use the BigQuerySnippets sample code from Github: https://github.com/Goo
 
 The table schema with json format looks like below:
 
-{"company_id":"1","user_firstname":"michael","user_lastname":"han","product_price":"5000.50","product_name":"iPhone6","sales_order_number":"001","sales_order_date":"1486283602455","user_id":"1","sales_order_id":"1","product_id":"1","company_name":"QAD","customer_name":"HP","customer_id":"1","status":"open"} </br>
+```json
+{"company_id":"1","user_firstname":"michael","user_lastname":"han","product_price":"5000.50","product_name":"iPhone6","sales_order_number":"001","sales_order_date":"1486283602455","user_id":"1","sales_order_id":"1","product_id":"1","company_name":"QAD","customer_name":"HP","customer_id":"1","status":"open"} ```
+</br>
 
 ## Execution & Output
 After you import into your exclipse project, run the java main method, you can see the following output in the console:
@@ -49,8 +51,12 @@ Step 5 end: Loading json.gz file into google bigquery at: Sun Feb 19 13:24:22 CS
 
 Step 6 start: Executing sql query command at: Sun Feb 19 13:24:22 CST 2017</br>
 A query command :</br>
-SELECT product_name, sum(product_price) total_amount FROM [bigquery-study-157507:sales_order_ds.sales_order] group by product_name order by total_amount desc LIMIT 10</br>
+```SQL
+SELECT product_name, sum(product_price) total_amount FROM [bigquery-study-157507:sales_order_ds.sales_order] group by product_name order by total_amount desc LIMIT 10
+```
+</br>
 was executed! Executing result lists below:</br>
+```
 product 999, 9.99E7, </br>
 product 998, 9.98E7, </br>
 product 997, 9.97E7, </br>
@@ -61,6 +67,7 @@ product 993, 9.93E7, </br>
 product 992, 9.92E7, </br>
 product 991, 9.91E7, </br>
 product 990, 9.9E7, </br>
+```
 Step 6 end: Executing sql query command at: Sun Feb 19 13:24:24 CST 2017</br>
 
 Celebrating to yourself!!!
