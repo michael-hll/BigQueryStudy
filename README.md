@@ -29,6 +29,8 @@ The table schema with json format looks like below:
 
 ## Execution & Output
 After you import it into your Eclipse project, run the java main method, you can see the following output in the console:
+</br>
+The important thing is it used about 2 seconds to execute the SQL command with 1 million rows. The BigQuery official said it could execute SQL query command fast even with 1 trillion records.
 
 ```
 Step 1 start: Generate json data file at: Sun Feb 19 13:23:02 CST 2017
